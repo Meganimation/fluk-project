@@ -1,25 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components';
+import { createGlobalStyle, css, keyframes } from 'styled-components'
+
+const Box = styled.div`
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+
+const fadeIn = keyframes`
+  0% {
+    color: black;
+    opacity: 0%;
+  }
+  100% {
+    color: white;
+    opacity: 100%;
+  }
+`;
+
+const Title = styled.h1`
+  color: white;
+  font-size: 100px;
+  animation: ${fadeIn} 5s;
+`
+
+const Body = styled.div`
+  color: white; 
+  size: 90px;
+  animation: ${fadeIn} 10s;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<>
+<Box>
+  <Title> FLUK </Title>
+  <Body>Coming Soon </Body>
+</Box>  
+</>
   );
 }
 
