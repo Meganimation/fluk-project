@@ -37,10 +37,12 @@ const Body = styled.div`
 function App() {
   return (
 <>
+
 <Box>
   <Title> FLUK </Title>
   <Body>Coming Soon </Body>
-</Box>  
+</Box> 
+
 </>
   );
 }
