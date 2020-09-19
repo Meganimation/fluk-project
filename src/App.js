@@ -10,7 +10,6 @@ const Box = styled.div`
   align-items: center;
 `
 
-
 const fadeIn = keyframes`
   0% {
     color: black;
@@ -37,12 +36,10 @@ const Body = styled.div`
 function App() {
   return (
 <>
-
 <Box>
   <Title> FLUK </Title>
   <Body>Coming Soon </Body>
 </Box> 
-
 </>
   );
 }
